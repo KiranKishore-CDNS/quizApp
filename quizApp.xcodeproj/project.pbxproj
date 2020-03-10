@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922CD33BADC404EDD194ED4F /* Pods_quizApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A1CB89DA198C3BE42D72CD /* Pods_quizApp.framework */; };
+		9945D9C822DD9AF600F24939 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9945D9C722DD9AF600F24939 /* Question.swift */; };
+		9945D9CA22DD9BB300F24939 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9945D9C922DD9BB300F24939 /* QuestionBank.swift */; };
+		99C2B32323DC005500BA357D /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C2B32123DC005500BA357D /* ProgressHUD.m */; };
+		99C2B32423DC005500BA357D /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 99C2B32223DC005500BA357D /* ProgressHUD.bundle */; };
 		99F094C822D9A21200F90DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F094C722D9A21200F90DDD /* AppDelegate.swift */; };
 		99F094CA22D9A21200F90DDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F094C922D9A21200F90DDD /* ViewController.swift */; };
 		99F094CD22D9A21200F90DDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F094CB22D9A21200F90DDD /* Main.storyboard */; };
@@ -15,6 +20,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38D567B5B837CD0ECC739DA3 /* Pods-quizApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quizApp.release.xcconfig"; path = "Target Support Files/Pods-quizApp/Pods-quizApp.release.xcconfig"; sourceTree = "<group>"; };
+		70DF2FEED1DE73ADB580E47B /* Pods-quizApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quizApp.debug.xcconfig"; path = "Target Support Files/Pods-quizApp/Pods-quizApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9945D9C722DD9AF600F24939 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		9945D9C922DD9BB300F24939 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		99C2B32023DC005500BA357D /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		99C2B32123DC005500BA357D /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		99C2B32223DC005500BA357D /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		99C2B32523DC005F00BA357D /* quizApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quizApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		99F094C422D9A21200F90DDD /* quizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F094C722D9A21200F90DDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99F094C922D9A21200F90DDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +35,7 @@
 		99F094CE22D9A21400F90DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99F094D122D9A21400F90DDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99F094D322D9A21400F90DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3A1CB89DA198C3BE42D72CD /* Pods_quizApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quizApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,77 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922CD33BADC404EDD194ED4F /* Pods_quizApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02415123A5DC354519A62018 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70DF2FEED1DE73ADB580E47B /* Pods-quizApp.debug.xcconfig */,
+				38D567B5B837CD0ECC739DA3 /* Pods-quizApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1BC8B72EA01016DBDFC7A271 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3A1CB89DA198C3BE42D72CD /* Pods_quizApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9945D9C122DD99B000F24939 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99F094C722D9A21200F90DDD /* AppDelegate.swift */,
+				99F094C922D9A21200F90DDD /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9945D9C222DD99BD00F24939 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9945D9C722DD9AF600F24939 /* Question.swift */,
+				9945D9C922DD9BB300F24939 /* QuestionBank.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9945D9C322DD99C500F24939 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99F094CB22D9A21200F90DDD /* Main.storyboard */,
+				99F094CE22D9A21400F90DDD /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9945D9C422DD9A1F00F24939 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99C2B32223DC005500BA357D /* ProgressHUD.bundle */,
+				99C2B32023DC005500BA357D /* ProgressHUD.h */,
+				99C2B32123DC005500BA357D /* ProgressHUD.m */,
+				99C2B32523DC005F00BA357D /* quizApp-Bridging-Header.h */,
+				99F094D322D9A21400F90DDD /* Info.plist */,
+				99F094D022D9A21400F90DDD /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		99F094BB22D9A21200F90DDD = {
 			isa = PBXGroup;
 			children = (
 				99F094C622D9A21200F90DDD /* quizApp */,
 				99F094C522D9A21200F90DDD /* Products */,
+				02415123A5DC354519A62018 /* Pods */,
+				1BC8B72EA01016DBDFC7A271 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +128,10 @@
 		99F094C622D9A21200F90DDD /* quizApp */ = {
 			isa = PBXGroup;
 			children = (
-				99F094C722D9A21200F90DDD /* AppDelegate.swift */,
-				99F094C922D9A21200F90DDD /* ViewController.swift */,
-				99F094CB22D9A21200F90DDD /* Main.storyboard */,
-				99F094CE22D9A21400F90DDD /* Assets.xcassets */,
-				99F094D022D9A21400F90DDD /* LaunchScreen.storyboard */,
-				99F094D322D9A21400F90DDD /* Info.plist */,
+				9945D9C122DD99B000F24939 /* Controller */,
+				9945D9C222DD99BD00F24939 /* Model */,
+				9945D9C322DD99C500F24939 /* View */,
+				9945D9C422DD9A1F00F24939 /* Supporting Files */,
 			);
 			path = quizApp;
 			sourceTree = "<group>";
@@ -71,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99F094D622D9A21400F90DDD /* Build configuration list for PBXNativeTarget "quizApp" */;
 			buildPhases = (
+				8B9D2AC1375BA4A25484E0C1 /* [CP] Check Pods Manifest.lock */,
 				99F094C022D9A21200F90DDD /* Sources */,
 				99F094C122D9A21200F90DDD /* Frameworks */,
 				99F094C222D9A21200F90DDD /* Resources */,
+				977C981512BE21475A7CA4F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +170,7 @@
 				TargetAttributes = {
 					99F094C322D9A21200F90DDD = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -122,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C2B32423DC005500BA357D /* ProgressHUD.bundle in Resources */,
 				99F094D222D9A21400F90DDD /* LaunchScreen.storyboard in Resources */,
 				99F094CF22D9A21400F90DDD /* Assets.xcassets in Resources */,
 				99F094CD22D9A21200F90DDD /* Main.storyboard in Resources */,
@@ -130,11 +206,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B9D2AC1375BA4A25484E0C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quizApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		977C981512BE21475A7CA4F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quizApp/Pods-quizApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quizApp/Pods-quizApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quizApp/Pods-quizApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		99F094C022D9A21200F90DDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9945D9C822DD9AF600F24939 /* Question.swift in Sources */,
+				9945D9CA22DD9BB300F24939 /* QuestionBank.swift in Sources */,
+				99C2B32323DC005500BA357D /* ProgressHUD.m in Sources */,
 				99F094CA22D9A21200F90DDD /* ViewController.swift in Sources */,
 				99F094C822D9A21200F90DDD /* AppDelegate.swift in Sources */,
 			);
@@ -280,17 +401,21 @@
 		};
 		99F094D722D9A21400F90DDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70DF2FEED1DE73ADB580E47B /* Pods-quizApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q9N53T7P53;
-				INFOPLIST_FILE = quizApp/Info.plist;
+				INFOPLIST_FILE = "quizApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cdns.quizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "quizApp/Supporting Files/quizApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,17 +423,20 @@
 		};
 		99F094D822D9A21400F90DDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38D567B5B837CD0ECC739DA3 /* Pods-quizApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q9N53T7P53;
-				INFOPLIST_FILE = quizApp/Info.plist;
+				INFOPLIST_FILE = "quizApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cdns.quizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "quizApp/Supporting Files/quizApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
